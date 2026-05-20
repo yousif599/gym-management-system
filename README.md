@@ -1,84 +1,111 @@
-Gym Management System
+# Gym Management System
 
-A desktop-based Gym Management System developed using Python and Tkinter for managing gym operations efficiently.
+A desktop-based Gym Management System developed using **Python** and **Tkinter** for managing gym operations efficiently.
+
 The system provides different interfaces for admins, employees, and members, allowing easy management of members, employees, products, and orders through a user-friendly GUI.
 
-Technologies Used
-Python
-Tkinter (GUI)
-SQLite Database
-Project Files Description
-login.py
+---
 
-Handles the login system and authentication for different user roles such as Admin, Employee, and Member.
+# Technologies Used
 
-admin_panel.py
+- Python
+- Tkinter (GUI)
+- SQLite Database
 
-Main dashboard for the admin where all management operations can be accessed.
+---
 
-employee_view.py
+# Project Structure
 
-Employee interface that allows employees to perform their assigned tasks within the system.
+```bash
+GYM_V0/
+│
+├── src/
+│   ├── login.py
+│   ├── admin_panel.py
+│   ├── employee_view.py
+│   ├── member_home.py
+│   ├── manage_members.py
+│   ├── manage_employees.py
+│   ├── manage_products.py
+│   ├── register_member.py
+│   ├── register_employee.py
+│   ├── view_members_employee.py
+│   ├── view_products_employee.py
+│   ├── view_orders.py
+│   └── init_db.py
+│
+├── README.md
+├── requirements.txt
+└── .gitignore
+```
 
-member_home.py
+---
 
-Home page for gym members displaying member-related features and information.
+# Project Files Description
 
-manage_members.py
+## `login.py`
+Handles the login system and authentication for Admin, Employee, and Member roles.
 
+## `admin_panel.py`
+Main dashboard for the admin to manage the entire system.
+
+## `employee_view.py`
+Employee interface for handling member-related operations.
+
+## `member_home.py`
+Home page for gym members displaying available services and features.
+
+## `manage_members.py`
 Provides functionality for adding, updating, deleting, and managing gym members.
 
-manage_employees.py
+## `manage_employees.py`
+Handles employee records and management operations.
 
-Used to manage employee records including adding and editing employee information.
+## `manage_products.py`
+Used for managing gym products and inventory.
 
-manage_products.py
+## `register_member.py`
+Registration form for adding new gym members.
 
-Handles gym products management such as supplements, equipment, and product inventory.
+## `register_employee.py`
+Registration form for adding new employees.
 
-register_member.py
+## `view_members_employee.py`
+Allows employees to search and view member information.
 
-Registration form for adding new gym members to the database.
+## `view_products_employee.py`
+Displays available products for employees.
 
-register_employee.py
+## `view_orders.py`
+Manages customer orders and purchase records.
 
-Registration interface for adding new employees to the system.
+## `init_db.py`
+Initializes the SQLite database and creates all required tables.
 
-view_members_employee.py
+---
 
-Allows employees to view and search member details.
+# Features
 
-view_products_employee.py
+- User Authentication System
+- Admin and Employee Roles
+- Member Management
+- Product Management
+- Order Tracking
+- SQLite Database Integration
+- User-Friendly Tkinter GUI
 
-Displays available products for employees with viewing and management options.
+---
 
-view_orders.py
+# Future Improvements
 
-Manages and displays customer orders and purchase records.
+- Payment Integration
+- Attendance Tracking
+- Subscription Management
+- Dashboard Analytics
+- Barcode System for Products
 
-init_db.py
+---
 
-Initializes the SQLite database and creates the required tables for the project.
+# Author
 
-gym_1.db
-
-SQLite database file that stores all project data including users, products, and orders.
-
-__pycache__/
-
-Contains automatically generated Python cache files.
-
-Features
-User Authentication System
-Admin and Employee Roles
-Member Management
-Product Management
-Order Tracking
-SQLite Database Integration
-User-Friendly Tkinter GUI
-Future Improvements
-Payment Integration
-Attendance Tracking
-Subscription Management
-Dashboard Analytics
-Barcode System for Products
+Yusuf
